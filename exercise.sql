@@ -38,5 +38,5 @@ WHERE p.price = 11.99 OR p.price = 13.99;
  WHERE MiddleInitial IS NULL AND e.title = 'Geek Squad';
 -- find all products from the products table whose stock level is in the range  -- of 500 to 1200. Order by Price from least to greatest. **Use the between keyword** 
 SELECT * FROM bestbuy.products
-WHERE Price BETWEEN (500 AND 1200)
+WHERE StockLevel BETWEEN 500 AND 1200
 ORDER BY Price;
